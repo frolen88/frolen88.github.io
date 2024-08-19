@@ -6,7 +6,7 @@
   <link href="https://frolen88.github.io/atom.xml" rel="self"/>
   
   <link href="https://frolen88.github.io/"/>
-  <updated>2024-08-19T14:02:05.779Z</updated>
+  <updated>2024-08-19T14:05:59.122Z</updated>
   <id>https://frolen88.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://frolen88.github.io/2024/08/19/test/"/>
     <id>https://frolen88.github.io/2024/08/19/test/</id>
     <published>2024-08-19T13:59:57.000Z</published>
-    <updated>2024-08-19T14:02:05.779Z</updated>
+    <updated>2024-08-19T14:05:59.122Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="这是作为一个尝试的post"><a href="#这是作为一个尝试的post" class="headerlink" title="这是作为一个尝试的post"></a>这是作为一个尝试的post</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">greet</span>(<span class="params">name</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Hello, &quot;</span> + name + <span class="string">&quot;!&quot;</span>)</span><br><span class="line">    </span><br><span class="line">greet(<span class="string">&quot;Alice&quot;</span>)</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h3 id="这是作为一个尝试的post"><a href="#这是作为一个尝试的post" class="headerlink" title="这是作为一个尝试的post"></a>这是作为一个尝试的post</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">greet</span>(<span class="params">name</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Hello, &quot;</span> + name + <span class="string">&quot;!&quot;</span>)</span><br><span class="line">    </span><br><span class="line">greet(<span class="string">&quot;Alice&quot;</span>)</span><br><span class="line"></span><br><span class="line">long_code = <span class="string">&quot;This is a very long line of code that may exceed the width of the screen and needs to be displayed in a code block without wrapping.&quot;</span></span><br><span class="line"><span class="built_in">print</span>(long_code)</span><br></pre></td></tr></table></figure>]]></content>
     
     
       
