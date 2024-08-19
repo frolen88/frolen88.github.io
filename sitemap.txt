@@ -1,4 +1,3 @@
-https://frolen88.github.io/test/index.html
 https://frolen88.github.io/link/index.html
 https://frolen88.github.io/about/index.html
 https://frolen88.github.io/tags/index.html
