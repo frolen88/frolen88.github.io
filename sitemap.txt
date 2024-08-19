@@ -1,4 +1,4 @@
-http://example.com/categories/index.html
-http://example.com/tags/index.html
-http://example.com/2024/08/18/hello-world/
-http://example.com/
+https://frolen88.github.io/tags/index.html
+https://frolen88.github.io/categories/index.html
+https://frolen88.github.io/2024/08/18/hello-world/
+https://frolen88.github.io/
