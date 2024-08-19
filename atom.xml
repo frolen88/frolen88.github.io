@@ -34,11 +34,15 @@
     <link href="http://example.com/2024/08/18/test/"/>
     <id>http://example.com/2024/08/18/test/</id>
     <published>2024-08-18T12:02:11.000Z</published>
-    <updated>2024-08-18T12:02:11.428Z</updated>
+    <updated>2024-08-19T06:16:43.959Z</updated>
     
     
     
     
+    <category term="test" scheme="http://example.com/categories/test/"/>
+    
+    
+    <category term="标签test" scheme="http://example.com/tags/%E6%A0%87%E7%AD%BEtest/"/>
     
   </entry>
   
