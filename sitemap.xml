@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://frolen88.github.io/2025/01/07/inheritance/</loc>
+    
+    <lastmod>2025-01-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://frolen88.github.io/2024/08/19/test/</loc>
     
     <lastmod>2024-12-28</lastmod>
@@ -58,7 +67,7 @@
 
   <url>
     <loc>https://frolen88.github.io/</loc>
-    <lastmod>2024-12-28</lastmod>
+    <lastmod>2025-01-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -66,7 +75,14 @@
   
   <url>
     <loc>https://frolen88.github.io/tags/test/</loc>
-    <lastmod>2024-12-28</lastmod>
+    <lastmod>2025-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://frolen88.github.io/tags/Java/</loc>
+    <lastmod>2025-01-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -75,14 +91,28 @@
   
   <url>
     <loc>https://frolen88.github.io/categories/%E7%AC%AC%E4%B8%80%E7%B1%BB/</loc>
-    <lastmod>2024-12-28</lastmod>
+    <lastmod>2025-01-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://frolen88.github.io/categories/%E7%AC%AC%E4%B8%80%E7%B1%BB/%E7%AC%AC%E4%BA%8C%E7%B1%BB/</loc>
-    <lastmod>2024-12-28</lastmod>
+    <lastmod>2025-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://frolen88.github.io/categories/Java/</loc>
+    <lastmod>2025-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://frolen88.github.io/categories/Java/Java%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2025-01-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
