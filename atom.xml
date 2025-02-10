@@ -6,7 +6,7 @@
   <link href="https://frolen88.github.io/atom.xml" rel="self"/>
   
   <link href="https://frolen88.github.io/"/>
-  <updated>2025-01-07T15:27:57.093Z</updated>
+  <updated>2025-02-10T06:30:42.525Z</updated>
   <id>https://frolen88.github.io/</id>
   
   <author>
@@ -17,13 +17,80 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>binarySearch</title>
+    <link href="https://frolen88.github.io/2025/02/10/binarySearch/"/>
+    <id>https://frolen88.github.io/2025/02/10/binarySearch/</id>
+    <published>2025-02-10T06:26:13.000Z</published>
+    <updated>2025-02-10T06:30:42.525Z</updated>
+    
+    <content type="html"><![CDATA[<p>之前每次写二分查找的时候都需要思考很久。主要思考的问题分为两个，第一就是left和right到底怎么变化，第二就是最后输出什么作为最后的结果。<a href="https://www.bilibili.com/video/BV1AP41137w7/?vd_source=ea351c852539b2b0449f514ba2472bbd">灵神的视频中通过左右开闭区间的方式</a>，讲述了二分查找相关的一些写法，看完之后恍然大悟，同时也在视频中也说明了对于二分查找相关的一些转化。这里主要就记录在leetcode刷题过程中对于相关思路和方法的运用总结，便于在之后翻找。</p>]]></content>
+    
+    
+    <summary type="html">二分查找学习与总结</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>排序算法</title>
+    <link href="https://frolen88.github.io/2025/01/14/sort/"/>
+    <id>https://frolen88.github.io/2025/01/14/sort/</id>
+    <published>2025-01-14T12:47:04.000Z</published>
+    <updated>2025-01-14T13:59:43.181Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h3><h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3><h3 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h3><h3 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h3><p>为什么不先移动start，而先移动end。因为我们默认的基准数是存储在前面的，因此最终停下来的那个点上的数据应该需要小于基准数。因此而停止条件是end遇上start。因此要么end符号条件终止，那么必然会停在小于基准数的数上，要么遇到start。且又因为start还没修改，其上面存的就是小于基准数的值，因此并不会出现问题。    </p>]]></content>
+    
+    
+    <summary type="html">针对排序算法相关知识进行学习，手搓一下相关代码。</summary>
+    
+    
+    
+    <category term="Java" scheme="https://frolen88.github.io/categories/Java/"/>
+    
+    <category term="algorithm" scheme="https://frolen88.github.io/categories/Java/algorithm/"/>
+    
+    
+    <category term="Java" scheme="https://frolen88.github.io/tags/Java/"/>
+    
+    <category term="algorithm" scheme="https://frolen88.github.io/tags/algorithm/"/>
+    
+    <category term="sort" scheme="https://frolen88.github.io/tags/sort/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>滑动窗口和双指针</title>
+    <link href="https://frolen88.github.io/2025/01/08/slidingWindow/"/>
+    <id>https://frolen88.github.io/2025/01/08/slidingWindow/</id>
+    <published>2025-01-08T06:08:28.000Z</published>
+    <updated>2025-02-10T06:41:09.804Z</updated>
+    
+    <content type="html"><![CDATA[<p>​    之前有关算法题相关的学习都是在力扣上瞎刷，这次准备好好训练一下。</p><p>​    有关滑动窗口和双指针的相关算法题学习，参考灵神的<a href="https://leetcode.cn/circle/discuss/0viNMK/">题单</a>。我主要抽取相关的一些题目说明自己的想法，并总结一些讨论。</p><p>​    滑动窗口的主要特点是限定了在一段范围内的数据需要存在合法性。最经典的就是针对子串而言，其中每个字母最多出现k次。</p><hr><h2 id="定长滑动窗口"><a href="#定长滑动窗口" class="headerlink" title="定长滑动窗口"></a>定长滑动窗口</h2><p>​    具体使用场景可以看<a href="https://leetcode.cn/problems/maximum-number-of-vowels-in-a-substring-of-given-length/description/">题目模板</a>。</p><p>​    相对最简单的一类滑动窗口题，解题思路也可以参考<a href="https://leetcode.cn/u/endlesscheng/">灵神</a>的力扣<a href="https://leetcode.cn/problems/maximum-number-of-vowels-in-a-substring-of-given-length/solutions/2809359/tao-lu-jiao-ni-jie-jue-ding-chang-hua-ch-fzfo/">套路说明</a>。</p><hr><h2 id="不定长滑动窗口"><a href="#不定长滑动窗口" class="headerlink" title="不定长滑动窗口"></a>不定长滑动窗口</h2><p>​    <strong>最长/最大</strong>：以力扣<a href="https://leetcode.cn/problems/maximum-length-substring-with-two-occurrences/">3090. 每个字符最多出现两次的最长子字符串</a>为例，为什么在固定右端点后，只需要将左端点移动过重复元素即可呢？为什么不考虑存在其他情况呢。</p><p>粗略的解释：可以想一下，从去除重复后的子串中随机挑选一个节点往两段进行扩展，很显然，最先重复的元素就是刚刚左端点移动过的。</p><p>​    <strong>最短/最小</strong>：在这类问题中，同样存在上面类似的问题。难道中间没有被滤过去更短或更小的子串吗？  思考方法与上面的相同</p><p>​    <strong>求子数组的个数：</strong>在这里的问题中，最后往往需要累加长度，无论是越长越合理还是越短越合理。在这个里面，还有一种特殊情况，也就是恰好型的滑动窗口，可以转化为三指针滑动窗口(针对==k，可以转化为&gt;=k与&gt;=k+1两个长度之间的差值)。</p>]]></content>
+    
+    
+    <summary type="html">太久没有系统的练习算法了。为了找工作，重新捡起来。这一部分是针对滑动窗口和双指针相关算法题的学习。</summary>
+    
+    
+    
+    <category term="Java" scheme="https://frolen88.github.io/categories/Java/"/>
+    
+    <category term="algorithm" scheme="https://frolen88.github.io/categories/Java/algorithm/"/>
+    
+    
+    <category term="algorithm" scheme="https://frolen88.github.io/tags/algorithm/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Java学习(二)</title>
     <link href="https://frolen88.github.io/2025/01/07/JavaKnowledge/"/>
     <id>https://frolen88.github.io/2025/01/07/JavaKnowledge/</id>
     <published>2025-01-07T12:01:01.000Z</published>
-    <updated>2025-01-07T15:27:57.093Z</updated>
+    <updated>2025-01-07T15:30:04.431Z</updated>
     
-    <content type="html"><![CDATA[<p>一句话简单总结多态中成员变量和成员方法的调用特点。调用成员变量：<strong>编译看左边，运行也看左边</strong>。调用成员方法：<strong>编译看左边，运行看右边</strong>。</p><hr><h3 id="成员内部类"><a href="#成员内部类" class="headerlink" title="成员内部类"></a>成员内部类</h3><ol><li><p>针对成员内部类如何获取外部类的成员变量。<a href="https://github.com/frolen88/JavaCoding/blob/d9d831118e34ee46ec91997beb7ab5884a8d65ef/src/test_inner_class/CaptureOuterMemberVariable.java">代码链接</a></p><p>具体分析的原因可以看到如图一种红色框所显示，因为内部类中会有一个变量指向外部类的对象this$0(在代码中使用Outer.this进行调用)。这也是为什么在代码中修改outer.a后，inner.show能够反映出改变。</p><p><img src="\pic\JVMinnerClass.png" alt="图一：内部类的内存结果"></p></li></ol><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">public class CaptureOuterMemberVariable &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        Outer outer = new Outer();</span><br><span class="line">        Outer.Inner inner = outer.new Inner();</span><br><span class="line">        inner.show();</span><br><span class="line">        outer.a = 4;</span><br><span class="line">        inner.show();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Outer&#123;</span><br><span class="line">    int a = 1;</span><br><span class="line"></span><br><span class="line">    class Inner&#123;</span><br><span class="line">        private int a = 2;</span><br><span class="line"></span><br><span class="line">        void show() &#123;</span><br><span class="line">            int a = 3;</span><br><span class="line">            System.out.println(Outer.this.a);   // 1    4</span><br><span class="line">            System.out.println(this.a);         // 2    2</span><br><span class="line">            System.out.println(a);              // 3    3</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ol><li><strong>外部类和内部类分为两个不同的文件加入到方法区中</strong>。</li></ol><p><img src="\pic\innerClass.png" alt="图二：内部类和外部类分开加入方法区证明"></p>]]></content>
+    <content type="html"><![CDATA[<hr><h3 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h3><p>一句话简单总结多态中成员变量和成员方法的调用特点。调用成员变量：<strong>编译看左边，运行也看左边</strong>。调用成员方法：<strong>编译看左边，运行看右边</strong>。</p><hr><h3 id="成员内部类"><a href="#成员内部类" class="headerlink" title="成员内部类"></a>成员内部类</h3><ol><li><p>针对成员内部类如何获取外部类的成员变量。<a href="https://github.com/frolen88/JavaCoding/blob/d9d831118e34ee46ec91997beb7ab5884a8d65ef/src/test_inner_class/CaptureOuterMemberVariable.java">代码链接</a></p><p>具体分析的原因可以看到如图一种红色框所显示，因为内部类中会有一个变量指向外部类的对象this$0(在代码中使用Outer.this进行调用)。这也是为什么在代码中修改outer.a后，inner.show能够反映出改变。</p><p><img src="\pic\JVMinnerClass.png" alt="图一：内部类的内存结果"></p></li></ol><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">public class CaptureOuterMemberVariable &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        Outer outer = new Outer();</span><br><span class="line">        Outer.Inner inner = outer.new Inner();</span><br><span class="line">        inner.show();</span><br><span class="line">        outer.a = 4;</span><br><span class="line">        inner.show();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class Outer&#123;</span><br><span class="line">    int a = 1;</span><br><span class="line"></span><br><span class="line">    class Inner&#123;</span><br><span class="line">        private int a = 2;</span><br><span class="line"></span><br><span class="line">        void show() &#123;</span><br><span class="line">            int a = 3;</span><br><span class="line">            System.out.println(Outer.this.a);   // 1    4</span><br><span class="line">            System.out.println(this.a);         // 2    2</span><br><span class="line">            System.out.println(a);              // 3    3</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><ol><li><strong>外部类和内部类分为两个不同的文件加入到方法区中</strong>。</li></ol><p><img src="\pic\innerClass.png" alt="图二：内部类和外部类分开加入方法区证明"></p>]]></content>
     
     
     <summary type="html">主要针对一下多态中的知识和内部类中的知识。</summary>
